@@ -10,6 +10,18 @@ ref: people
 
 profiles:
   - align: right
+    image: deng-xiaoheng.jpg
+    image_circular: false
+    name: Xiaoheng Deng
+    role: Professor, Doctoral Supervisor, Dean of the School of Electronic Information, Central South University
+    bio: >
+      Prof. Deng leads WCMC Lab. He is a Hunan Province "Furong Scholar" Distinguished Professor
+      and Director of the Hunan Engineering Research Center for Deep Sensing and Intelligent Communication.
+    interests: Wireless networks, edge computing, Internet of Things, big data, intelligent vehicular networks, distributed systems
+    email: dxh@csu.edu.cn
+    homepage: https://faculty.csu.edu.cn/dengxiaoheng/zh_CN/index/10444/list/index.htm
+
+  - align: right
     image: people/gui-jinsong.jpg
     image_circular: false
     name: Jinsong Gui

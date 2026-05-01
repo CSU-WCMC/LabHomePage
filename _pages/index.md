@@ -2,8 +2,10 @@
 layout: none
 permalink: /
 ---
+
 {% assign en_path = '/en/' | relative_url %}
 {% assign zh_path = '/zh/' | relative_url %}
+
 <script>
   (function () {
     var lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();

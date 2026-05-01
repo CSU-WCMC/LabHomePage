@@ -10,6 +10,20 @@ ref: people
 
 profiles:
   - align: right
+    image: deng-xiaoheng.jpg
+    image_circular: false
+    name: 邓晓衡
+    role: 教授，博士生导师，中南大学电子信息学院院长
+    bio: >
+      邓晓衡教授负责 WCMC 无线通信与智能计算实验室，现任中南大学电子信息学院院长、湖南省“芙蓉学者”特聘教授，并担任湖南省深度感知与智能通信工程研究中心主任。
+    interests_label: 研究方向
+    interests: 无线网络，边缘计算，物联网，大数据，智能车联网，分布式系统
+    email: dxh@csu.edu.cn
+    email_label: 邮箱
+    homepage_label: 主页
+    homepage: https://faculty.csu.edu.cn/dengxiaoheng/zh_CN/index/10444/list/index.htm
+
+  - align: left
     image: people/gui-jinsong.jpg
     image_circular: false
     name: 桂劲松
@@ -23,7 +37,7 @@ profiles:
     homepage_label: 主页
     homepage: https://faculty.csu.edu.cn/guijinsong/zh_CN/index.htm
 
-  - align: left
+  - align: right
     image: people/qi-huamei.png
     image_circular: false
     name: 漆华妹
@@ -37,7 +51,7 @@ profiles:
     homepage_label: 主页
     homepage: https://faculty.csu.edu.cn/qihuamei/zh_CN/index/16897/list/index.htm
 
-  - align: right
+  - align: left
     image: people/lin-hairong.png
     image_circular: false
     name: 蔺海荣
@@ -51,7 +65,7 @@ profiles:
     homepage_label: 主页
     homepage: https://faculty.csu.edu.cn/linhairong/zh_CN/index.htm
 
-  - align: left
+  - align: right
     image: people/chen-xuechen.png
     image_circular: false
     name: 陈雪晨
@@ -65,7 +79,7 @@ profiles:
     homepage_label: 主页
     homepage: https://faculty.csu.edu.cn/chenxuechen/zh_CN/index.htm
 
-  - align: right
+  - align: left
     image: people/ouyang-tao.png
     image_circular: false
     name: 欧阳涛
@@ -77,7 +91,7 @@ profiles:
     homepage_label: 主页
     homepage: https://faculty.csu.edu.cn/ouyangtao/zh_CN/index.htm
 
-  - align: left
+  - align: right
     image: people/luo-jingjing.png
     image_circular: false
     name: 罗静静
@@ -91,7 +105,7 @@ profiles:
     homepage_label: 主页
     homepage: https://faculty.csu.edu.cn/luojingjing/zh_CN/index.htm
 
-  - align: right
+  - align: left
     image: people/zhang-zhenxiao.png
     image_circular: false
     name: 张震霄

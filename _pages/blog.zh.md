@@ -14,7 +14,8 @@ ref: blog
     <h2>{{ site.blog_description }}</h2>
   </div>
 
-  {% assign postlist = site.posts | where: "lang", "zh" %}
+{% assign postlist = site.posts | where: "lang", "zh" %}
+
   <ul class="post-list">
     {% for post in postlist %}
       <li>

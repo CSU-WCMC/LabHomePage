@@ -1,7 +1,7 @@
 <div class="news">
   {% if page.latest_posts != blank %}
     {% assign current_lang = page.lang | default: site.lang | default: 'en' %}
-    {% assign latest_posts = site.posts | where: "lang", current_lang %}
+    {% assign latest_posts = site.posts | where: 'lang', current_lang %}
     {% assign latest_posts_size = latest_posts | size %}
     <div
       class="table-responsive"

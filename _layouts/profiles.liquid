@@ -32,7 +32,9 @@ layout: page
               <p>{{ profile.bio }}</p>
             {% endif %}
             {% if profile.interests %}
-              <p><strong>{{ profile.interests_label | default: 'Research interests' }}:</strong> {{ profile.interests }}</p>
+              <p>
+                <strong>{{ profile.interests_label | default: 'Research interests' }}:</strong> {{ profile.interests }}
+              </p>
             {% endif %}
             <p>
               {% if profile.email %}

@@ -1,6 +1,6 @@
 <header>
   {% assign current_lang = page.lang | default: site.lang | default: 'en' %}
-  {% assign about_page = site.pages | where: "ref", "about" | where: "lang", current_lang | first %}
+  {% assign about_page = site.pages | where: 'ref', 'about' | where: 'lang', current_lang | first %}
   {% if about_page %}
     {% assign about_url = about_page.url %}
     {% assign about_title = about_page.title %}
@@ -10,8 +10,8 @@
   {% endif %}
 
   {% assign current_ref = page.ref | default: '' %}
-  {% assign en_page = site.pages | where: "ref", current_ref | where: "lang", "en" | first %}
-  {% assign zh_page = site.pages | where: "ref", current_ref | where: "lang", "zh" | first %}
+  {% assign en_page = site.pages | where: 'ref', current_ref | where: 'lang', 'en' | first %}
+  {% assign zh_page = site.pages | where: 'ref', current_ref | where: 'lang', 'zh' | first %}
   {% assign en_url = en_page.url | default: '/en/' %}
   {% assign zh_url = zh_page.url | default: '/zh/' %}
 
@@ -136,8 +136,22 @@
               onchange="if (this.value) window.location.href=this.value;"
               style="max-width: 110px; border: none; background: transparent;"
             >
-              <option value="{{ en_url | relative_url }}" {% if current_lang == 'en' %}selected{% endif %}>EN</option>
-              <option value="{{ zh_url | relative_url }}" {% if current_lang == 'zh' %}selected{% endif %}>中文</option>
+              <option
+                value="{{ en_url | relative_url }}"
+                {% if current_lang == 'en' %}
+                  selected
+                {% endif %}
+              >
+                EN
+              </option>
+              <option
+                value="{{ zh_url | relative_url }}"
+                {% if current_lang == 'zh' %}
+                  selected
+                {% endif %}
+              >
+                中文
+              </option>
             </select>
           </li>
           {% if site.search_enabled %}
@@ -171,4 +185,3 @@
     </progress>
   {% endif %}
 </header>
-

@@ -1,7 +1,7 @@
 <div class="news">
   {% if site.news != blank %}
     {% assign current_lang = page.lang | default: site.lang | default: 'en' %}
-    {% assign news = site.news | where: "lang", current_lang | reverse %}
+    {% assign news = site.news | where: 'lang', current_lang | reverse %}
     {% assign news_size = news | size %}
     <div
       class="table-responsive"

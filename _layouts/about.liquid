@@ -3,9 +3,9 @@ layout: default
 ---
 <div class="post">
   {% assign current_lang = page.lang | default: site.lang | default: 'en' %}
-  {% assign news_page = site.pages | where: "ref", "news" | where: "lang", current_lang | first %}
-  {% assign blog_page = site.pages | where: "ref", "blog" | where: "lang", current_lang | first %}
-  {% assign publications_page = site.pages | where: "ref", "publications" | where: "lang", current_lang | first %}
+  {% assign news_page = site.pages | where: 'ref', 'news' | where: 'lang', current_lang | first %}
+  {% assign blog_page = site.pages | where: 'ref', 'blog' | where: 'lang', current_lang | first %}
+  {% assign publications_page = site.pages | where: 'ref', 'publications' | where: 'lang', current_lang | first %}
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
