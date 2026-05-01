@@ -87,7 +87,7 @@ profiles:
     image: people/luo-jingjing.png
     image_circular: false
     name: Jingjing Luo
-    role: Distinguished Professor, Doctoral Supervisor, Master's Supervisor, School of Electronic Information, Central South University
+    role: Professor
     bio: >
       Prof. Luo works on ubiquitous health sensing and computing, AI-enabled health monitoring,
       and intelligent medical rehabilitation robotic systems.
@@ -116,5 +116,6 @@ profiles:
       Prof. Li works on wireless communication theory and wireless signal processing, with a focus on
       waveform design and signal processing for next-generation mobile communication systems.
     interests: Wireless communication theory, wireless signal processing, massive MIMO, OTFS, low-complexity distributed signal detection
+    email: lishuo@csu.edu.cn
     homepage: https://faculty.csu.edu.cn/lishuo/zh_CN/index/217658/list/index.htm
 ---

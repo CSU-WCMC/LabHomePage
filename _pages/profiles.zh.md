@@ -130,6 +130,8 @@ profiles:
       李朔老师长期从事无线通信理论与无线信号处理相关研究，重点关注下一代移动通信系统波形设计与信号处理。
     interests_label: 研究方向
     interests: 无线通信理论，无线信号处理，大规模多天线，正交时频空调制，低复杂度分布式信号检测
+    email: lishuo@csu.edu.cn
+    email_label: 邮箱
     homepage_label: 主页
     homepage: https://faculty.csu.edu.cn/lishuo/zh_CN/index/217658/list/index.htm
 ---
