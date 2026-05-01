@@ -2,7 +2,7 @@
 layout: default
 permalink: /zh/blog/
 title: 博客
-nav: true
+nav: false
 nav_order: 1
 lang: zh
 ref: blog

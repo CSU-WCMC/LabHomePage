@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /zh/teaching/
-title: 教学
+title: 招聘
 description: 课程资料、时间安排与教学资源。
 nav: true
 nav_order: 6

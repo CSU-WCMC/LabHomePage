@@ -2,7 +2,7 @@
 layout: cv
 permalink: /en/cv/
 title: CV
-nav: true
+nav: false
 nav_order: 5
 lang: en
 ref: cv

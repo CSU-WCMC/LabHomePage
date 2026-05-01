@@ -1,6 +1,6 @@
 ---
 layout: about
-title: 关于
+title: 首页
 permalink: /zh/
 lang: zh
 ref: about

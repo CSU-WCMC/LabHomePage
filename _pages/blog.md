@@ -2,7 +2,7 @@
 layout: default
 permalink: /en/blog/
 title: blog
-nav: true
+nav: false
 nav_order: 1
 lang: en
 ref: blog

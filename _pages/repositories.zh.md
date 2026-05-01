@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /zh/repositories/
-title: 代码仓库
+title: 图库
 description: 展示团队/个人 GitHub 账号与仓库列表。
 nav: true
 nav_order: 4

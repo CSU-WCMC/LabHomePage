@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 项目
+title: 研究
 permalink: /zh/projects/
 description: 项目展示与进展。
 nav: true

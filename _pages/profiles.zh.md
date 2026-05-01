@@ -1,10 +1,10 @@
 ---
 layout: profiles
 permalink: /zh/people/
-title: 团队成员
+title: 人员
 description: 课题组/团队成员简介
 nav: true
-nav_order: 7
+nav_order: 1
 lang: zh
 ref: people
 

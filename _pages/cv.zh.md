@@ -2,7 +2,7 @@
 layout: cv
 permalink: /zh/cv/
 title: 简历
-nav: true
+nav: false
 nav_order: 5
 lang: zh
 ref: cv
