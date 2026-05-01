@@ -23,7 +23,29 @@ layout: page
         </div>
 
         <div class="clearfix">
-          {% if profile.content %}
+          {% if profile.name %}
+            <h2>{{ profile.name }}</h2>
+            {% if profile.role %}
+              <p class="post-description">{{ profile.role }}</p>
+            {% endif %}
+            {% if profile.bio %}
+              <p>{{ profile.bio }}</p>
+            {% endif %}
+            {% if profile.interests %}
+              <p><strong>{{ profile.interests_label | default: 'Research interests' }}:</strong> {{ profile.interests }}</p>
+            {% endif %}
+            <p>
+              {% if profile.email %}
+                <a href="mailto:{{ profile.email }}">{{ profile.email_label | default: 'Email' }}</a>
+              {% endif %}
+              {% if profile.email and profile.homepage %}
+                &nbsp;|&nbsp;
+              {% endif %}
+              {% if profile.homepage %}
+                <a href="{{ profile.homepage }}" target="_blank">{{ profile.homepage_label | default: 'Homepage' }}</a>
+              {% endif %}
+            </p>
+          {% elsif profile.content %}
             {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
             {{ profile_content | markdownify }}
           {% else %}
