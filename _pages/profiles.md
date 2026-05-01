@@ -21,7 +21,7 @@ profiles:
     email: dxh@csu.edu.cn
     homepage: https://faculty.csu.edu.cn/dengxiaoheng/zh_CN/index/10444/list/index.htm
 
-  - align: right
+  - align: left
     image: people/gui-jinsong.jpg
     image_circular: false
     name: Jinsong Gui
@@ -34,7 +34,7 @@ profiles:
     email: jsgui2010@csu.edu.cn
     homepage: https://faculty.csu.edu.cn/guijinsong/zh_CN/index.htm
 
-  - align: left
+  - align: right
     image: people/qi-huamei.png
     image_circular: false
     name: Huamei Qi
@@ -47,7 +47,7 @@ profiles:
     email: qhm@csu.edu.cn
     homepage: https://faculty.csu.edu.cn/qihuamei/zh_CN/index/16897/list/index.htm
 
-  - align: right
+  - align: left
     image: people/lin-hairong.png
     image_circular: false
     name: Hairong Lin
@@ -59,7 +59,7 @@ profiles:
     email: haironglin@csu.edu.cn
     homepage: https://faculty.csu.edu.cn/linhairong/zh_CN/index.htm
 
-  - align: left
+  - align: right
     image: people/chen-xuechen.png
     image_circular: false
     name: Xuechen Chen
@@ -71,7 +71,7 @@ profiles:
     email: chenxuec@csu.edu.cn
     homepage: https://faculty.csu.edu.cn/chenxuechen/zh_CN/index.htm
 
-  - align: right
+  - align: left
     image: people/ouyang-tao.png
     image_circular: false
     name: Tao Ouyang
@@ -80,9 +80,10 @@ profiles:
       Prof. Ouyang works on edge intelligence, on-device agents, large model inference acceleration,
       fine-tuning optimization, distributed systems, and algorithm design.
     interests: Edge intelligence, edge large-model systems, on-device agents, online optimization, online learning, reinforcement learning
+    email: ouyangtao@csu.edu.cn
     homepage: https://faculty.csu.edu.cn/ouyangtao/zh_CN/index.htm
 
-  - align: left
+  - align: right
     image: people/luo-jingjing.png
     image_circular: false
     name: Jingjing Luo
@@ -94,7 +95,7 @@ profiles:
     email: luojingjing@csu.edu.cn
     homepage: https://faculty.csu.edu.cn/luojingjing/zh_CN/index.htm
 
-  - align: right
+  - align: left
     image: people/zhang-zhenxiao.png
     image_circular: false
     name: Zhenxiao Zhang
@@ -105,4 +106,15 @@ profiles:
     interests: Network security, edge intelligence, privacy-preserving federated learning, trustworthy AI, efficient LLM fine-tuning
     email: zhenxiao.zhang@csu.edu.cn
     homepage: https://faculty.csu.edu.cn/zhangzhenxiao/zh_CN/index/218097/list/index.htm
+
+  - align: right
+    image: people/li-shuo.png
+    image_circular: false
+    name: Shuo Li
+    role: Distinguished Associate Professor, School of Electronic Information, Central South University
+    bio: >
+      Prof. Li works on wireless communication theory and wireless signal processing, with a focus on
+      waveform design and signal processing for next-generation mobile communication systems.
+    interests: Wireless communication theory, wireless signal processing, massive MIMO, OTFS, low-complexity distributed signal detection
+    homepage: https://faculty.csu.edu.cn/lishuo/zh_CN/index/217658/list/index.htm
 ---

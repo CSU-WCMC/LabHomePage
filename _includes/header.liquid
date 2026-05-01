@@ -20,6 +20,9 @@
     <div class="container">
       {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+          {% if site.icon and site.icon != blank and site.icon.size > 4 %}
+            <img class="navbar-brand-icon" src="{{ site.icon | prepend: '/assets/img/' | relative_url }}" alt="WCMC Lab icon">
+          {% endif %}
           {% if site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
