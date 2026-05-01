@@ -11,14 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-people",
           title: "PEOPLE",
-          description: "members of the lab or group",
+          description: "Faculty members of WCMC Lab",
           section: "Navigation",
           handler: () => {
             window.location.href = "/LabHomePage/en/people/";
           },
         },{id: "nav-人员",
           title: "人员",
-          description: "课题组/团队成员简介",
+          description: "WCMC 实验室主要 Faculty",
           section: "Navigation",
           handler: () => {
             window.location.href = "/LabHomePage/zh/people/";
