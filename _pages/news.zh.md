@@ -1,6 +1,6 @@
 ---
 layout: page
-title: æ–°é—»
+title: ĞÂÎÅ
 nav: true
 nav_order: 5
 permalink: /zh/news/
