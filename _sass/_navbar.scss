@@ -205,6 +205,11 @@
   background-color: inherit;
   color: var(--global-text-color);
 
+  .nav-link {
+    width: 76px;
+    justify-content: center;
+  }
+
   &:hover {
     color: var(--global-hover-color);
   }
