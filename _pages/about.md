@@ -1,7 +1,9 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: /en/
+lang: en
+ref: about
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:

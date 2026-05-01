@@ -1,4 +1,20 @@
 <header>
+  {% assign current_lang = page.lang | default: site.lang | default: 'en' %}
+  {% assign about_page = site.pages | where: "ref", "about" | where: "lang", current_lang | first %}
+  {% if about_page %}
+    {% assign about_url = about_page.url %}
+    {% assign about_title = about_page.title %}
+  {% else %}
+    {% assign about_url = '/' %}
+    {% assign about_title = 'about' %}
+  {% endif %}
+
+  {% assign current_ref = page.ref | default: '' %}
+  {% assign en_page = site.pages | where: "ref", current_ref | where: "lang", "en" | first %}
+  {% assign zh_page = site.pages | where: "ref", current_ref | where: "lang", "zh" | first %}
+  {% assign en_url = en_page.url | default: '/en/' %}
+  {% assign zh_url = zh_page.url | default: '/zh/' %}
+
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
@@ -42,15 +58,11 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
-          {% endfor %}
-
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
+          <li class="nav-item {% if page.ref == 'about' %}active{% endif %}">
+            <a class="nav-link" href="{{ about_url | relative_url }}">
               {{- about_title }}
-              {% if page.permalink == '/' %}
+              {% if page.ref == 'about' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
@@ -59,7 +71,7 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% if p.nav and p.autogen == null and p.lang == current_lang %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -117,6 +129,17 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          <li class="nav-item">
+            <select
+              class="form-select form-select-sm nav-link"
+              aria-label="Language switcher"
+              onchange="if (this.value) window.location.href=this.value;"
+              style="max-width: 110px; border: none; background: transparent;"
+            >
+              <option value="{{ en_url | relative_url }}" {% if current_lang == 'en' %}selected{% endif %}>EN</option>
+              <option value="{{ zh_url | relative_url }}" {% if current_lang == 'zh' %}selected{% endif %}>中文</option>
+            </select>
+          </li>
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">

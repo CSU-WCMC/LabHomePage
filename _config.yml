@@ -237,6 +237,18 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      type: posts
+    values:
+      lang: en
+  - scope:
+      type: news
+    values:
+      lang: en
+  - scope:
+      type: projects
+    values:
+      lang: en
 
 sass:
   style: compressed

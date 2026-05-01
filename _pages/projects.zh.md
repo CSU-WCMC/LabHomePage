@@ -1,27 +1,24 @@
 ---
 layout: page
-title: projects
-permalink: /en/projects/
-description: A growing collection of your cool projects.
+title: 项目
+permalink: /zh/projects/
+description: 项目展示与进展。
 nav: true
 nav_order: 3
-lang: en
+lang: zh
 ref: projects
 display_categories: [work, fun]
 horizontal: false
 ---
 
-<!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
   {% for category in page.display_categories %}
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
-  {% assign categorized_projects = site.projects | where: "lang", "en" | where: "category", category %}
+  {% assign categorized_projects = site.projects | where: "lang", "zh" | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
   {% if page.horizontal %}
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
@@ -38,17 +35,9 @@ horizontal: false
   </div>
   {% endif %}
   {% endfor %}
-
 {% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | where: "lang", "en" | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
+{% assign sorted_projects = site.projects | where: "lang", "zh" | sort: "importance" %}
 {% if page.horizontal %}
-
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}

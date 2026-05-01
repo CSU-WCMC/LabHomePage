@@ -2,6 +2,10 @@
 layout: default
 ---
 <div class="post">
+  {% assign current_lang = page.lang | default: site.lang | default: 'en' %}
+  {% assign news_page = site.pages | where: "ref", "news" | where: "lang", current_lang | first %}
+  {% assign blog_page = site.pages | where: "ref", "blog" | where: "lang", current_lang | first %}
+  {% assign publications_page = site.pages | where: "ref", "publications" | where: "lang", current_lang | first %}
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -43,7 +47,7 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ news_page.url | default: '/en/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -51,7 +55,7 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ blog_page.url | default: '/en/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -59,7 +63,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ publications_page.url | default: '/en/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
