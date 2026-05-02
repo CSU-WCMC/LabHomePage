@@ -32,7 +32,7 @@ The People page currently includes the following faculty members:
 - Prof. Zhenxiao Zhang
 - Prof. Shuo Li
 
-人员页面当前包括以下教师：邓晓衡、桂劲松、戚华梅、林海蓉、陈雪晨、欧阳涛、罗静静、张振霄、李朔。
+人员页面当前包括以下教师：邓晓衡、桂劲松、漆华妹、蔺海荣、陈雪晨、欧阳涛、罗静静、张震霄、李朔。
 
 ## Site Content
 
