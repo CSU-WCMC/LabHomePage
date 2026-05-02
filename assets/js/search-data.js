@@ -39,14 +39,14 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "RESEARCH",
-          description: "A growing collection of your cool projects.",
+          description: "Research directions and funded project portfolio of WCMC Lab.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/LabHomePage/en/projects/";
           },
         },{id: "nav-研究",
           title: "研究",
-          description: "项目展示与进展。",
+          description: "WCMC 实验室研究方向与科研项目概览。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/LabHomePage/zh/projects/";
@@ -81,14 +81,14 @@ ninja.data = [{
           },
         },{id: "nav-positions",
           title: "POSITIONS",
-          description: "Course materials, schedules, and resources for classes taught.",
+          description: "Open positions and collaboration opportunities at WCMC Lab.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/LabHomePage/en/teaching/";
           },
-        },{id: "nav-招聘",
-          title: "招聘",
-          description: "课程资料、时间安排与教学资源。",
+        },{id: "nav-招生招聘",
+          title: "招生招聘",
+          description: "WCMC 实验室招生、科研训练与合作机会。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/LabHomePage/zh/teaching/";
