@@ -39,14 +39,14 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "RESEARCH",
-          description: "Research directions and funded project portfolio of WCMC Lab.",
+          description: "Selected funded research projects of WCMC Lab.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/LabHomePage/en/projects/";
           },
         },{id: "nav-研究",
           title: "研究",
-          description: "WCMC 实验室研究方向与科研项目概览。",
+          description: "WCMC 实验室代表性科研项目。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/LabHomePage/zh/projects/";
